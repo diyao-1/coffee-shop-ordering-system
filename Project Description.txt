@@ -1,0 +1,18 @@
+Scope
+The ultimate goal was an application that could be used by both administrators and behind-the-counter employees at Kelley's coffee shop to change the price of current products, reorder current products, and process customer orders. The application is similar to Square POS, seen at many small businesses across the nation.
+
+Two Extensions
+1. Administration Page
+For security purposes, we didn't feel like it was right for employees behind the counter have permission to change the prices of our products or order additional inventory. We decided to make a separate administration page that would allow only the administrator to change the price of our products or restock additional inventory. 
+2. Merchandise Inclusion
+We chose for our coffee shop, Espresso a Mano, to sell not only coffee products (Espresso, Latte, and Cappuccino), but also merchandise. Our order page includes both a mug and a t-shirt under the merchandise category, and is able to be included in an order just like the coffee products.
+
+User Instructions
+1. The main window allows the user to choose either that they are the administrator or that they are making an order. (If administrator, read "a" below. For placing an order, read "b".)
+a. If you have selected that you are the administrator, you have a couple options. On the left side of the page, you are able to select an item from the drop down box and change its price. Once selected, a user must enter a positive value between 0 and 200 in the text box below. On the right side of the screen, the Administrator has the option to reorder product. After selecting a product to restock, the administrator once again selects a quantity between 0 and 200 to add to the current inventory level of that specific product.
+b. If you have selected that you are placing an order, the app assumes that you are taking the role of a behind-the-counter employee working with a customer to place an order. Each product is listed with an individual quantity. A positive integer must be entered in quantity. The employee then can select to submit the order or check if there is enough inventory to place the order, all from the same screen. Inventory numbers will show in the bottom left, while order summary and totals will show on the right of the screen in separate list boxes.
+Constraints
+1.  Inventory levels will not be saved after each successive shut down.
+2. When altering the price or inventory levels through the administrative window the application will only keep those respective levels temporarily for one run, then result back to the default values in the next run.
+3. Any changes made through the administration window including price levels, inventory levels, or products being offered will not be reflected in the main window where the user selects the product and submits the order.
+
